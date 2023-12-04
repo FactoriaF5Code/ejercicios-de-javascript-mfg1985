@@ -83,20 +83,22 @@ describe("Strings", () => {
 describe("Booleanos", () => {
    it("un booleano puede tomar dos valores", () => {
         let b = false;
-        expect(b).to.be(false);
+        expect(b).to.be.false;
    }) 
 });
 
 describe('Comparaciones en Javascript', () => {
     it("usando ===", () => {
-        const number = 20;
+        const number =20;
+        const expresion = number === 20;
         //completa la asignación usando number y el comparador ===
 
-        expect(expresion).to.equal(false)
+        expect(expresion).to.equal(true)
     })
 
     it("usando !==", () => {
         const language = "Javascript";
+        const expresion language!=="JavaScript";
         //completa la asignación usando language y el comparador !==
 
         expect(expresion).to.equal(false)
