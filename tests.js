@@ -98,7 +98,7 @@ describe('Comparaciones en Javascript', () => {
 
     it("usando !==", () => {
         const language = "Javascript";
-        const expresion language!=="JavaScript";
+        const expresion language !=="JavaScript";
         //completa la asignación usando language y el comparador !==
 
         expect(expresion).to.equal(false)
