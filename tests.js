@@ -197,13 +197,13 @@ describe("Funciones (I)", () => {
     function evenOrOdd(n) {
         // cambia el contenido de la función para hacer
         // pasar los tests
-        return "";
+        return n % 2 === 0 ? "even" : "odd";
     }
 
     function greeting(name) {
         // cambia el contenido de la función para hacer
         // pasar los tests
-        return "";
+        return "Hola, " + name + "!";
     }
 
     it("Función que nos dice si un número es par (even) o impar (odd)", () => {
@@ -248,7 +248,7 @@ describe("Funciones (II)", () => {
 
 
         // substituye "???" por el valor que tiene la variable "result"        
-        expect(result === "???").to.be.true;
+        expect(result === 28).to.be.true;
     })
 
     it("Cuál es el resultado de invocar la función? (2)", () => {
@@ -257,16 +257,16 @@ describe("Funciones (II)", () => {
 
 
         // substituye "???" por el valor que tiene la variable "result"        
-        expect(result === "???").to.be.true;
+        expect(result === "Son Pinky y Cerebro").to.be.true;
     })
 
     it("Cuál es el resultado de invocar la función? (3)", () => {
 
         // substituye "???" por el resultado en cada caso
-        expect(h("khaleesi mother of dragons breaker of chains") === "???").to.be.true;
-        expect(h("sarah") === "???").to.be.true;
-        expect(h("bob") === "???").to.be.true;
-        expect(h("robertson") === "???").to.be.true;
+        expect(h("khaleesi mother of dragons breaker of chains") === "very long").to.be.true;
+        expect(h("sarah") === "adequate").to.be.true;
+        expect(h("bob") === "too short").to.be.true;
+        expect(h("robertson") === "long").to.be.true;
     })
 
 })
